@@ -1,0 +1,70 @@
+{
+	"info": {
+		"_postman_id": "8851015e-e255-43f5-8876-63956ebb79f6",
+		"name": "Xcale",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "getAllMessagesFromGroup",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "",
+						"value": "",
+						"type": "default",
+						"disabled": true
+					}
+				],
+				"url": {
+					"raw": "localhost:8090/api/message?groupId=2",
+					"host": [
+						"localhost"
+					],
+					"port": "8090",
+					"path": [
+						"api",
+						"message"
+					],
+					"query": [
+						{
+							"key": "groupId",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "createMessage",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"message\":\"Buenos dias!\",\r\n    \"userId\": 549388155738245,\r\n    \"groupId\": 2\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8090/api/message/createMessage",
+					"host": [
+						"localhost"
+					],
+					"port": "8090",
+					"path": [
+						"api",
+						"message",
+						"createMessage"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
